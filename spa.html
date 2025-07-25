@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spa - Lunella Retreat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo"><a href="index.html">Lunella Retreat</a></div>
+
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="accommodation.html">Accommodation</a></li>
+
+    <li class="dropdown">
+      <a href="#">Explore ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="pool.html">Pool</a></li>
+        <li><a href="ember-garden.html">Ember Garden</a></li>
+        <li><a href="kids.html">Kiddies Lounge</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </li>
+
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- Hero Section -->
+  <header class="spa-hero">
+    <div class="hero-text">
+      <h1>Spa & Wellness</h1>
+      <p>Relax. Restore. Reconnect.</p>
+    </div>
+  </header>
+
+  <!-- Spa Details -->
+  <section class="spa-section">
+    <div class="spa-container">
+
+      <h2>Our Signature Experiences</h2>
+
+      <div class="spa-grid">
+        <div class="spa-box">
+          <img src="images/spa beauty bar.JPG" alt="Beauty Bar">
+          <h3>Beauty Bar</h3>
+          <p>Makeup, hair, and nails — expertly delivered in our
+luxurious open-concept studio.</p>
+        </div>
+
+        <div class="spa-box">
+          <img src="images/spa massage.JPG" alt="Massage Rooms">
+          <h3>Massage & Facial Rooms</h3>
+          <p>Private, tranquil spaces designed for full-body massages,
+facials, and healing therapies.</p>
+        </div>
+
+        <div class="spa-box">
+          <img src="images/spa hydro pool.JPG" alt="Hydrotherapy">
+          <h3>Hydrotherapy Pool</h3>
+          <p>Relax your muscles and mind in our warm, therapeutic spa
+pool overlooking serene views.</p>
+        </div>
+
+        <div class="spa-box">
+          <img src="images/spa quiet room.JPG" alt="Silent Room">
+          <h3>Silent Room</h3>
+          <p>A cozy, tech-free space for quiet reflection, meditation,
+or post-treatment recovery.</p>
+        </div>
+
+        <div class="spa-box">
+          <img src="images/spa retail.JPG" alt="Retail Area">
+          <h3>Retail Corner</h3>
+          <p>Take wellness home with you. Browse curated spa products
+and artisan self-care items.</p>
+        </div>
+
+        <div class="spa-box">
+          <img src="images/spa gym.JPG" alt="Gym">
+          <h3>Wellness Gym</h3>
+          <p>A calming fitness zone for yoga, stretching, and mindful
+movement — open to all guests.</p>
+        </div>
+
+      </div>
+
+      <div class="center-btn">
+        <a href="spa-pricelist.html" class="spa-button">View Spa Price List</a>
+      </div>
+
+    </div>
+  </section>
+  <script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggleBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

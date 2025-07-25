@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunella Retreat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+  <div class="logo"><a href="index.html">Lunella Retreat</a></div>
+
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="accommodation.html">Accommodation</a></li>
+
+    <li class="dropdown">
+      <a href="#">Explore ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="pool.html">Pool</a></li>
+        <li><a href="ember-garden.html">Ember Garden</a></li>
+        <li><a href="kids.html">Kiddies Lounge</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </li>
+
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Lunella Retreat</h1>
+      <p>A place where serenity meets luxury</p>
+    </div>
+  </header>
+
+  <!-- Location -->
+  <section class="location">
+    <a href="https://maps.google.com" target="_blank">
+      📍 View Us on Google Maps
+    </a>
+  </section>
+
+  <!-- About Preview -->
+  <section class="about-preview">
+    <a href="about.html">About Us →</a>
+    <p>
+      Nestled in the tranquil Muldersdrift grounds, Lunella Retreat is
+a dream-turned-reality — a sanctuary of peace and luxury.
+    </p>
+  </section>
+
+  <!-- Accommodation -->
+  <section class="accommodation-preview">
+    <a href="accommodation.html">
+      <img src="images/family main room.JPG" alt="Accommodation">
+    </a>
+  </section>
+
+  <!-- Wider Drone Image -->
+  <section class="drone">
+    <img src="images/drone image exterior.JPG" alt="Drone view of the resort">
+  </section>
+
+  <!-- Resort Facilities Grid -->
+  <section class="facilities">
+    <h2>Explore Our Facilities</h2>
+    <div class="facility-grid">
+      <a href="spa.html"><img src="images/spa-tn.JPG" alt="Spa"><p>Spa</p></a>
+      <a href="restaurant.html"><img src="images/restaurant fine dining-tn.JPG"
+alt="Restaurant"><p>Restaurant</p></a>
+      <a href="pool.html"><img src="images/pool.jpg" alt="Pool"><p>Pool</p></a>
+      <a href="firepit.html"><img src="images/people around fire pit-tn.JPG" alt="Fire
+Pit"><p>Fireside Lounge</p></a>
+      <a href="events.html"><img src="images/Events venue.JPG" alt="Events
+Venue"><p>Events Venue</p></a>
+      <a href="kiddies.html"><img src="images/kiddies lounge playarea.JPG"
+alt="Kiddies Lounge"><p>Kiddies Lounge</p></a>
+    </div>
+  </section>
+  <script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggleBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

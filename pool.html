@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Outdoor Pool | Lunella Retreat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+  <div class="logo"><a href="index.html">Lunella Retreat</a></div>
+
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="accommodation.html">Accommodation</a></li>
+
+    <li class="dropdown">
+      <a href="#">Explore ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="pool.html">Pool</a></li>
+        <li><a href="ember-garden.html">Ember Garden</a></li>
+        <li><a href="kids.html">Kiddies Lounge</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </li>
+
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  </header>
+
+  <main class="page-content">
+    <section class="hero-section">
+      <h1>Outdoor Pool</h1>
+      <p>Where privacy meets paradise.</p>
+    </section>
+
+    <section class="text-section">
+      <p>
+        Nestled between lush privacy trees and the serene atmosphere of Lunella Retreat, our outdoor pool
+        offers the perfect space to relax, recharge, and bask in the sunlight. Whether you're cooling off with
+        a refreshing dip or simply lounging poolside with a cocktail from the restaurant, it's designed
+        to offer tranquility and indulgence.
+      </p>
+    </section>
+
+    <section class="gallery-section">
+      <h2>Pool Gallery</h2>
+      <div class="image-grid">
+        <img src="images/pool.jpg" alt="Main pool with privacy trees">
+        <img src="images/pool area.JPG" alt="Pool loungers and sun beds">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lunella Retreat. All rights reserved.</p>
+  </footer>
+  <script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggleBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

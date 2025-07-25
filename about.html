@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Lunella Retreat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+  <div class="logo"><a href="index.html">Lunella Retreat</a></div>
+
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="accommodation.html">Accommodation</a></li>
+
+    <li class="dropdown">
+      <a href="#">Explore ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="pool.html">Pool</a></li>
+        <li><a href="ember-garden.html">Ember Garden</a></li>
+        <li><a href="kids.html">Kiddies Lounge</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </li>
+
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- Header Banner -->
+  <header class="about-hero">
+    <div class="about-hero-text">
+      <h1>About Lunella Retreat</h1>
+      <p>A dream realized. A sanctuary for the soul.</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-content">
+    <div class="about-container">
+      <img src="images/about sunrise.JPG" alt="Resort View" class="about-image">
+
+      <div class="about-text">
+        <h2>Our Story</h2>
+        <p>
+          Nestled in the serene Muldersdrift countryside, Lunella
+Retreat is a luxury spa and boutique resort born from years of
+dreaming, planning, and prayer. It all began with a vision — a
+five-star spa offering world-class wellness, beauty, and holistic
+healing, combined with elegant accommodation and curated dining.
+        </p>
+
+        <p>
+          Our founder's dream was to create a place where tranquility
+meets thoughtful design — from our spa’s beauty bar and hydrotherapy
+pool to the supervised kiddies lounge and serene restaurant garden.
+Every corner of Lunella Retreat is designed to bring you comfort,
+luxury, and peace.
+        </p>
+
+        <h2>Our Vision</h2>
+        <p>
+          To be the most serene and welcoming retreat in South Africa,
+offering guests a uniquely soulful and luxurious experience.
+        </p>
+
+        <h2>Our Location</h2>
+        <p>
+          You’ll find us tucked away on lush green grounds in
+Muldersdrift — a quiet escape just minutes from Johannesburg’s bustle,
+but miles away in spirit.
+        </p>
+      </div>
+    </div>
+  </section>
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggleBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+</body>
+</html>
+

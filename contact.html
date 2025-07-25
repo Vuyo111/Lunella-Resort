@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Lunella Retreat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+  <div class="logo"><a href="index.html">Lunella Retreat</a></div>
+
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="accommodation.html">Accommodation</a></li>
+
+    <li class="dropdown">
+      <a href="#">Explore ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="pool.html">Pool</a></li>
+        <li><a href="ember-garden.html">Ember Garden</a></li>
+        <li><a href="kids.html">Kiddies Lounge</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </li>
+
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  </header>
+
+  <main class="page-content contact">
+    <h1>Contact Us</h1>
+    <p>If you’d like to book your stay, a spa treatment, or an event — we’d love to hear from you!</p>
+
+    <div class="contact-container">
+      <div class="contact-details">
+        <h2>Our Location</h2>
+        <p>Muldersdrift, Gauteng, South Africa</p>
+        <a href="https://www.google.com/maps" target="_blank">📍 View on Google Maps</a>
+
+        <h2>Call / WhatsApp</h2>
+        <p><a href="tel:+27123456789">+27 12 345 6789</a></p>
+
+        <h2>Email</h2>
+        <p><a href="mailto:info@lunellaretreat.co.za">info@lunellaretreat.co.za</a></p>
+      </div>
+
+      <form class="contact-form">
+        <h2>Send a Message</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="6" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lunella Retreat. All rights reserved.</p>
+  </footer>
+  <script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggleBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

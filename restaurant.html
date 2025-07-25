@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Garden Table - Lunella Retreat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo"><a href="index.html">Lunella Retreat</a></div>
+
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="accommodation.html">Accommodation</a></li>
+
+    <li class="dropdown">
+      <a href="#">Explore ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="pool.html">Pool</a></li>
+        <li><a href="ember-garden.html">Ember Garden</a></li>
+        <li><a href="kids.html">Kiddies Lounge</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </li>
+
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Hero Section -->
+  <header class="restaurant-hero">
+    <div class="overlay-text">
+      <h1>The Garden Table</h1>
+      <p>Where taste meets tranquility.</p>
+    </div>
+  </header>
+
+  <!-- About Restaurant -->
+  <section class="restaurant-about">
+    <h2>About The Garden Table</h2>
+    <p>
+      Nestled within Lunella Retreat, The Garden Table is our
+signature restaurant celebrating farm-to-fork freshness.
+      From peaceful indoor seating to sunlit garden dining, we serve
+wholesome meals made with local ingredients and seasonal inspiration.
+Perfect for couples, families, or solo serenity.
+    </p>
+  </section>
+
+  <!-- Image Gallery -->
+  <section class="restaurant-gallery">
+    <img src="images/restaurant interior.JPG" alt="Indoor Dining Area" />
+    <img src="images/restaurant extrerior.JPG" alt="Outdoor Garden Dining" />
+    <img src="images/Chef plating.JPG" alt="Plated Gourmet Dish" />
+  </section>
+
+  <!-- View Menu -->
+  <section class="menu-link-section">
+    <a href="restaurant-menu.html" class="menu-button">View Full Menu</a>
+  </section>
+  <script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggleBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

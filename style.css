@@ -1,0 +1,936 @@
+/* Reset basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7f8;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('images/index-hero.JPG');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+/* Location */
+.location {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.location a {
+  color: #336699;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* About Preview */
+.about-preview {
+  text-align: center;
+  margin: 1rem auto;
+  padding: 0 2rem;
+  max-width: 600px;
+}
+
+.about-preview a {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.about-preview p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Accommodation Preview */
+.accommodation-preview img,
+.drone img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+
+/* Facilities Section */
+.facilities {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.facilities h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.facility-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.facility-grid a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.facility-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.facility-grid img:hover {
+  transform: scale(1.05);
+}
+
+.facility-grid p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+/* About Page Styling */
+
+.about-hero {
+  background-image: url('images/drone\ image\ exterior.JPG'); 
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.about-hero-text {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+}
+
+.about-hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.about-hero-text p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.about-content {
+  padding: 3rem 1rem;
+  background-color: #fff;
+  color: #333;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-image {
+  flex: 1 1 40%;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1 1 55%;
+}
+
+.about-text h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.about-text p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+}
+/* Accommodation Page */
+
+.accommodation-hero {
+  background-image: url('images/family\ main\ room.JPG'); /* Choose a
+relaxing, wide scenic image */
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.accommodation-section {
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+}
+
+.accommodation-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.room-block {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.room-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.room-block img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex: 1;
+}
+
+.room-info {
+  flex: 1;
+}
+
+.room-info h2 {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  color: #3c3c3c;
+}
+
+.room-info p {
+  line-height: 1.6;
+  color: #5c5c5c;
+}
+.suite-gallery img{
+    display:flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+.suite-gallery img{
+    width: 30%;
+    min-width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+}
+/* Navigation Bar */
+
+.navbar {
+  background-color: #f2f7f8;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #35656b;
+  text-decoration: none;
+  font-family: 'Georgia', serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #699ea3;
+}
+/* Spa Page */
+
+.spa-hero {
+  background-image: url('images/spa-tn.JPG');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.spa-section {
+  padding: 3rem 1rem;
+  background-color: #fefefe;
+}
+
+.spa-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.spa-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.spa-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.spa-box {
+  background: #f4f7f8;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+
+.spa-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.spa-box h3 {
+  margin: 1rem 0 0.5rem;
+  color: #355c61;
+}
+
+.spa-box p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.center-btn {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.spa-button {
+  background-color: #355c61;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.spa-button:hover {
+  background-color: #4a7d83;
+}
+/* Spa Price List Page */
+
+.price-header {
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+  background-color: #f7fdfd;
+  color: #355c61;
+}
+
+.price-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.price-header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.spa-price-section {
+  padding: 2rem 1rem 4rem;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.price-image-container {
+  max-width: 800px;
+  width: 100%;
+}
+
+.price-list-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+/* Restaurant Overview Page */
+
+.restaurant-hero {
+  background: url('images/restaurant\ kitchen.JPG') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+}
+
+.restaurant-hero .overlay-text {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.restaurant-about {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background-color: #f9fdfc;
+}
+
+.restaurant-about h2 {
+  font-size: 2rem;
+  color: #355c61;
+  margin-bottom: 1rem;
+}
+
+.restaurant-about p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.restaurant-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+.restaurant-gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.menu-link-section {
+  text-align: center;
+  padding: 2rem 1rem 4rem;
+  background-color: #f7fdfd;
+}
+
+.menu-button {
+  background-color: #355c61;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: #2a4a4e;
+}
+/* Restaurant Menu Page */
+
+.menu-header {
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+  background-color: #f7fdfd;
+  color: #355c61;
+}
+
+.menu-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.menu-section {
+  padding: 2rem 1rem 4rem;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.menu-image-container {
+  max-width: 800px;
+  width: 100%;
+}
+
+.menu-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+/* Events Page */
+
+.events-hero {
+  background: url('images/Events\ venue.JPG') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+}
+
+.events-hero .overlay-text {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.events-info {
+  padding: 3rem 2rem;
+  background-color: #f5fdfc;
+  text-align: center;
+}
+
+.events-info h2 {
+  font-size: 2rem;
+  color: #3d5c58;
+  margin-bottom: 1rem;
+}
+
+.events-info p {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+.events-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem auto 0;
+  max-width: 600px;
+  text-align: left;
+}
+
+.events-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #cceae4;
+  color: #355c61;
+}
+
+.events-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem 4rem;
+  background-color: #fff;
+}
+
+.events-gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* Kids Lounge */
+
+.kids-hero {
+  background: url('images/kiddies\ lounge\ playarea.JPG') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+}
+
+.kids-hero .overlay-text {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.kids-info {
+  padding: 3rem 2rem;
+  background-color: #fffaf5;
+  text-align: center;
+}
+
+.kids-info h2 {
+  font-size: 2rem;
+  color: #cf6f9f;
+  margin-bottom: 1rem;
+}
+
+.kids-info p {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+.kids-features {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  font-size: 1.05rem;
+  color: #222;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kids-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem 4rem;
+  background-color: #fff;
+}
+
+.kids-gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* The Ember Garden (Fire Pit) */
+
+.ember-hero {
+  background: url('images/people\ around\ fire\ pit-tn.JPG') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+}
+
+.ember-hero .overlay-text {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.ember-info {
+  padding: 3rem 2rem;
+  background-color: #fff9f4;
+  text-align: center;
+}
+
+.ember-info h2 {
+  font-size: 2rem;
+  color: #d47b5b;
+  margin-bottom: 1rem;
+}
+
+.ember-info p {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+.ember-features {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  font-size: 1.05rem;
+  color: #333;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ember-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem 4rem;
+  background-color: #fff;
+}
+
+.ember-gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* Page Content Styling */
+.page-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/pool.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 6rem 1rem;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+/* Text Section */
+.text-section {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Gallery Section */
+.gallery-section {
+  text-align: center;
+}
+
+.gallery-section h2 {
+  margin-bottom: 1.5rem;
+}
+
+.image-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-grid img {
+  width: 30%;
+  min-width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+/* Contact Page */
+.contact {
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.contact-details,
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background: #f7f7f7;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #558b8f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #457174;
+}
+/* Dropdown Navigation Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 0.5rem 0;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+}
+/* Mobile Navigation */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .dropdown-menu {
+    background-color: white;
+    padding: 0.5rem;
+  }
+
+  .dropdown-menu li {
+    margin: 0.5rem 0;
+  }
+}
